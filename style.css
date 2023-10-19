@@ -1,0 +1,91 @@
+/* imported font family from google */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family:digital;
+    src: url(./fonts/Digital\ Dismay.otf);
+}
+body {
+    background-color: rgba(171, 198, 206, 0.327) !important;
+    
+}
+
+  
+  
+/* stopwatch container */
+
+.container {
+    background-color: rgb(214, 112, 172);
+    width: 50% !important;
+    margin-top: 20vh;
+    height: 50vh;
+    font-size: 10vw;
+    font-family: 'Lato', sans-serif;
+    border-radius: 40px;
+    box-shadow: 1px 1px 11px 8px rgb(41, 36, 36);
+
+ 
+}
+/* display containser*/
+
+.timer-display {
+    position: relative;
+    width: 82%;
+    background: #0b0e0f;
+    margin-top: 7%;
+    font-family: 'digital';
+    color: hwb(0 93% 5%);
+    font-size: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(111, 98, 128, 0.25);
+    
+}
+
+/* stopwatch-buttons */
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: #8c52ff;
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.buttons button:nth-last-child(2) {
+    background-color: #e35209;
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: #f7df1e;
+}
+
+.buttons button:hover {
+    box-shadow: 0 0 20px rgba(4, 87, 45, 0.911);
+}
+/* media-query for less than equal 756 px */
+@media screen and (max-width:756px) {
+    .count-down {
+        position: relative;
+        top: 3vh;
+    }
+
+    .buttons {
+        position: relative;
+        top: 2vh;
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-bottom: 4vh;
+
+    }
+}
